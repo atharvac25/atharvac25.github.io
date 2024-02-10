@@ -1,7 +1,4 @@
-import _ from "https://cdn.skypack.dev/lodash";
-import lodashThrottle from "https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js";
-
-
+import lodashThrottle from "https://cdn.skypack.dev/lodash.throttle@4.1.1";
 
 const scrollContainer = document.querySelector('[data-scroller]')
 const sections = gsap.utils.toArray('section')

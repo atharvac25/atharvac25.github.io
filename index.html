@@ -1,141 +1,47 @@
-<link rel="stylesheet" href="/tj.css">
-    <script  src="/tj.js"></script>
-<nav>
-	<!--Shows our position on the timeline-->
-	<div class="marker"></div>
-	
-	<!--Draggable element-->
-	<div class="nav__track" data-draggable>
-		<ul class="nav__list">
-			<li>
-				<a href="#section_1" class="nav__link" data-link><span>1993</span></a>
-			</li>
-			<li>
-				<a href="#section_2" class="nav__link" data-link><span>1995</span></a>
-			</li>
-			<li>
-				<a href="#section_3" class="nav__link" data-link><span>1997</span></a>
-			</li>
-			<li>
-				<a href="#section_4" class="nav__link" data-link><span>2000</span></a>
-			</li>
-			<li>
-				<a href="#section_5" class="nav__link" data-link><span>2001</span></a>
-			</li>
-			<li>
-				<a href="#section_6" class="nav__link" data-link><span>2003</span></a>
-			</li>
-			<li>
-				<a href="#section_7" class="nav__link" data-link><span>2007</span></a>
-			</li>
-			<li>
-				<a href="#section_8" class="nav__link" data-link><span>2011</span></a>
-			</li>
-			<li>
-				<a href="#section_9" class="nav__link" data-link><span>2016</span></a>
-			</li>
-		</ul>
-	</div>
-</nav>
-
-<main>
-	<section id="section_1" style="--i: 0">
-		<div class="container">
-			<h2 class="section__heading">
-				<span>1993</span>
-				<span>Pablo Honey</span>
-			</h2>
-			<div class="section__image">
-				<img src="https://assets.codepen.io/85648/radiohead_pablo-honey.jpg" width="1200" height="1200" />
-			</div>
-		</div>
-	</section>
-	<section id="section_2" style="--i: 1">
-		<div class="container">
-			<h2 class="section__heading">
-				<span>1995</span>
-				<span>The Bends</span>
-			</h2>
-			<div class="section__image">
-				<img src="https://assets.codepen.io/85648/radiohead_the-bends.webp" width="1200" height="1200" />
-			</div>
-		</div>
-	</section>
-	<section id="section_3" style="--i: 2">
-		<div class="container">
-			<h2 class="section__heading">
-				<span>1997</span>
-				<span>OK Computer</span>
-			</h2>
-			<div class="section__image">
-				<img src="https://assets.codepen.io/85648/radiohead_ok-computer.webp" width="1200" height="1200" />
-			</div>
-		</div>
-	</section>
-	<section id="section_4" style="--i: 3">
-		<div class="container">
-			<h2 class="section__heading">
-				<span>2000</span>
-				<span>Kid A</span>
-			</h2>
-			<div class="section__image">
-				<img src="https://assets.codepen.io/85648/radiohead_kid-a.webp" width="1200" height="1200" />
-			</div>
-		</div>
-	</section>
-	<section id="section_5" style="--i: 4">
-		<div class="container">
-			<h2 class="section__heading">
-				<span>2001</span>
-				<span>Amnesiac</span>
-			</h2>
-			<div class="section__image">
-				<img src="https://assets.codepen.io/85648/radiohead_amnesiac.webp" width="1200" height="1200" />
-			</div>
-		</div>
-	</section>
-	<section id="section_6" style="--i: 5">
-		<div class="container">
-			<h2 class="section__heading">
-				<span>2003</span>
-				<span>Hail to the Thief</span>
-			</h2>
-			<div class="section__image" style="--i: 6">
-				<img src="https://assets.codepen.io/85648/radiohead_hail-to-the-thief.webp" width="1200" height="1200" />
-			</div>
-		</div>
-	</section>
-	<section id="section_7" style="--i: 7">
-		<div class="container">
-			<h2 class="section__heading">
-				<span>2007</span>
-				<span>In Rainbows</span>
-			</h2>
-			<div class="section__image">
-				<img src="https://assets.codepen.io/85648/radiohead_in-rainbows.webp" width="1200" height="1200" />
-			</div>
-		</div>
-	</section>
-	<section id="section_8" style="--i: 8">
-		<div class="container">
-			<h2 class="section__heading">
-				<span>2011</span>
-				<span>The King of Limbs</span>
-			</h2>
-			<div class="section__image">
-				<img src="https://assets.codepen.io/85648/radiohead_king-of-linbs.webp" width="1200" height="1200" />
-			</div>
-		</div>
-	</section>
-	<section id="section_9" style="--i: 9">
-		<div class="container">
-			<h2 class="section__heading">
-				<span>2016</span>
-				<span>A Moon Shaped Pool</span>
-			</h2>
-			<div class="section__image">
-				<img src="https://assets.codepen.io/85648/radiohead_a-moon-shaped-pool.webp" width="1200" height="1200" />
-			</div>
-		</div>
-	</section>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js Example</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+    
+    /* Style for the div to cover a section of the page */
+    .sketchfab-embed-wrapper {
+      position: absolute;
+      top: 20%; /* Adjust as needed */
+      left: 20%; /* Adjust as needed */
+      width: 60%; /* Adjust as needed */
+      height: 60%; /* Adjust as needed */
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+      overflow: hidden; /* Hide overflowing content */
+      border-radius: 10px; /* Optional: Rounded corners */
+    }
+    
+    /* Style for the iframe to fill the entire div */
+    .sketchfab-embed-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: none; /* Remove iframe border */
+    }
+    
+    /* Additional styling for the embedded content */
+    .sketchfab-embed-wrapper p {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      margin: 0;
+      font-size: 13px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="sketchfab-embed-wrapper">
+    <iframe title="Flower" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/0a0f5b4e595940649ea3cabeb7a4b1e1/embed"></iframe>
+    <p>Embedded content description here...</p>
+  </div>
+</body>
+</html>
